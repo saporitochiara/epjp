@@ -1,4 +1,4 @@
-package s025;
+package s027;
 
 public class Primitive {
     public static void main(String[] args) {

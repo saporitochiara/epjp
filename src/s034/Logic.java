@@ -1,4 +1,4 @@
-package s031;
+package s034;
 
 public class Logic {
     public static void main(String[] args) {

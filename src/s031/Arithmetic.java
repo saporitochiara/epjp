@@ -1,4 +1,4 @@
-package s028;
+package s031;
 
 public class Arithmetic {
     public static void main(String[] args) {

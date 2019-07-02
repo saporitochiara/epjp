@@ -1,4 +1,4 @@
-package s032;
+package s035;
 
 public class Assignment {
     public static void main(String[] args) {
