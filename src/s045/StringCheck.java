@@ -1,6 +1,6 @@
 package s045;
 
-public class String2 {
+public class StringCheck {
     public static void main(String[] args) {
         String s = "hello";
         String t = "world";

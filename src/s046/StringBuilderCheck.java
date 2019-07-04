@@ -1,6 +1,6 @@
 package s046;
 
-public class StringBuilder2 {
+public class StringBuilderCheck {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder(20);
