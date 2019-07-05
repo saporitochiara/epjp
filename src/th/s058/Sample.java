@@ -15,7 +15,7 @@ public class Sample {
         this.b = 23;
     }
 
-    public void f() {
-        System.out.println(a);
+    public int h() {
+        return a / 2;
     }
 }
