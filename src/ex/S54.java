@@ -9,6 +9,7 @@ public class S54 {
      * @return the sum of all the numbers, or zero
      */
     public static long sum(int first, int last) {
+        // TODO
         return 0;
     }
 
@@ -20,6 +21,7 @@ public class S54 {
      * @return the sum of all the even numbers, or zero
      */
     public static long evenSum(int first, int last) {
+        // TODO
         return 0;
     }
     
@@ -30,6 +32,7 @@ public class S54 {
      * @return factorial of input value, or zero
      */
     public static long factorial(int value) {
+        // TODO
         return 0;
     }
     
@@ -40,6 +43,7 @@ public class S54 {
      * @return the Fibonacci number of value, or zero
      */
     public static long fibonacci(int value) {
+        // TODO
         return 0;
     }
     
@@ -51,6 +55,8 @@ public class S54 {
      */
     public static int[][] multiplicationTable(int value) {
         int[][] result = new int[0][0];
+
+        // TODO
         
         return result;
     }

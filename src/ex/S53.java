@@ -8,6 +8,7 @@ public class S53 {
      * @return "positive", "negative", or "zero"
      */
     public static String checkSign(int value) {
+        // TODO
         return "";
     }
     
@@ -18,6 +19,7 @@ public class S53 {
      * @return "odd" or "even"
      */
     public static boolean isOdd(int value) {
+        // TODO
         return false;
     }
     
@@ -28,6 +30,7 @@ public class S53 {
      * @return "zero" for 0 ... "nine" for 9, or "other"
      */
     public static String asWord(int value) {
+        // TODO
         return "";
     }
 }
