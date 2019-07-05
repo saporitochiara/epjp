@@ -1,18 +1,18 @@
 package th.s060;
 
 public class Sample {
-    private int i; // 0
-    private boolean flag; // false
-    private String t; // null
+    private int a;
+    static double c;
 
-    public void f() {
-        int i = 42;
-        String s = new String("Hello");
-
-        System.out.println(s + i);
+    static private double f() {
+        return c;
     }
 
-    public void g() {
-        System.out.println(t + ", " + i + ", " + flag);
+    void g() {
+        f();
+    }
+
+    public int h() {
+        return a / 2;
     }
 }

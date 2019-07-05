@@ -1,4 +1,4 @@
-package th.s057;
+package th.s058;
 
 public class Scope {
     private static int staticMember = 5;
