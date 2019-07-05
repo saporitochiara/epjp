@@ -1,6 +1,5 @@
 package ex;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -9,82 +8,51 @@ import org.junit.jupiter.api.Test;
 class S54Test {
 
     @Test
-    void sumPositive() {
-        long actual = S54.sum(1, 3);
+    void checkSignPositive() {
+        String actual = S54.checkSign(42);
 
-        assertThat(actual, is(6L));
+        assertThat(actual, is("positive"));
     }
 
     @Test
-    void sumNegPos() {
-        long actual = S54.sum(-3, 3);
+    void checkSignNegative() {
+        String actual = S54.checkSign(-42);
 
-        assertThat(actual, is(0L));
+        assertThat(actual, is("negative"));
     }
 
     @Test
-    void sumSingle() {
-        long actual = S54.sum(1003, 1003);
+    void checkSignZero() {
+        String actual = S54.checkSign(0);
 
-        assertThat(actual, is(1003L));
+        assertThat(actual, is("zero"));
     }
 
     @Test
-    void sumEmpty() {
-        long actual = S54.sum(1003, 1002);
+    void isOddTrue() {
+        boolean actual = S54.isOdd(19);
 
-        assertThat(actual, is(0L));
+        assertThat(actual, is(true));
     }
 
     @Test
-    void evenSumPositive() {
-        long actual = S54.evenSum(1, 3);
+    void isOddFalse() {
+        boolean actual = S54.isOdd(-12);
 
-        assertThat(actual, is(2L));
+        assertThat(actual, is(false));
     }
 
     @Test
-    void evenSumNegPos() {
-        long actual = S54.evenSum(-3, 3);
+    void asWordZero() {
+        String actual = S54.asWord(0);
 
-        assertThat(actual, is(0L));
+        assertThat(actual, is("zero"));
     }
 
     @Test
-    void evenSumSingle() {
-        long actual = S54.evenSum(1002, 1002);
+    void asWordOther() {
+        String actual = S54.asWord(42);
 
-        assertThat(actual, is(1002L));
-    }
-
-    @Test
-    void evenSumEmpty() {
-        long actual = S54.evenSum(1003, 1002);
-
-        assertThat(actual, is(0L));
-    }
-
-    @Test
-    void factorialFour() {
-        long actual = S54.factorial(4);
-        
-        assertThat(actual, is(24L));
-    }
-
-    @Test
-    void factorialNegative() {
-        long actual = S54.factorial(-4);
-        
-        assertThat(actual, is(0L));
-    }
-
-    @Test
-    void fibonacci() {
-        fail("Not yet implemented");
-    }
-
-    @Test
-    void multiplicationTable() {
-        fail("Not yet implemented");
+        assertThat(actual, is("other"));
     }
 }

@@ -2,62 +2,35 @@ package ex;
 
 public class S54 {
     /**
-     * Add up all the numbers in the passed closed interval
-     * 
-     * @param first the left limit
-     * @param last the right limit
-     * @return the sum of all the numbers, or zero
+     * Check if the parameter is positive, negative, or zero
+     *  
+     * @param value an integer
+     * @return "positive", "negative", or "zero"
      */
-    public static long sum(int first, int last) {
+    public static String checkSign(int value) {
         // TODO
-        return 0;
-    }
-
-    /**
-     * Add up only the even numbers in the passed closed interval
-     * 
-     * @param first the left limit
-     * @param last the right limit
-     * @return the sum of all the even numbers, or zero
-     */
-    public static long evenSum(int first, int last) {
-        // TODO
-        return 0;
+        return "";
     }
     
     /**
-     * Factorial
+     * Check if the parameter is odd
      * 
-     * @param value
-     * @return factorial of input value, or zero
+     * @param value an integer
+     * @return "odd" or "even"
      */
-    public static long factorial(int value) {
+    public static boolean isOdd(int value) {
         // TODO
-        return 0;
+        return false;
     }
     
     /**
-     * Fibonacci number (0, 1, 1, 2, 3, 5, 8, …)
+     * Convert the parameter to its English name, if it is in [0..9]
      * 
-     * @param value
-     * @return the Fibonacci number of value, or zero
+     * @param value an integer
+     * @return "zero" for 0 ... "nine" for 9, or "other"
      */
-    public static long fibonacci(int value) {
+    public static String asWord(int value) {
         // TODO
-        return 0;
-    }
-    
-    /**
-     * Multiplication table
-     * 
-     * @param value
-     * @return The multiplication table for value, when possible
-     */
-    public static int[][] multiplicationTable(int value) {
-        int[][] result = new int[0][0];
-
-        // TODO
-        
-        return result;
+        return "";
     }
 }

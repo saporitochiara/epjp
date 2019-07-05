@@ -1,5 +1,6 @@
 package ex;
 
+import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -8,56 +9,82 @@ import org.junit.jupiter.api.Test;
 class S55Test {
 
     @Test
-    void reverseStringPlain() {
-        String actual = S55.reverse("abc");
+    void sumPositive() {
+        long actual = S55.sum(1, 3);
 
-        assertThat(actual, is("cba"));
+        assertThat(actual, is(6L));
     }
 
     @Test
-    void isPalindromePlain() {
-        boolean actual = S55.isPalindrome("abba");
+    void sumNegPos() {
+        long actual = S55.sum(-3, 3);
 
-        assertThat(actual, is(true));
+        assertThat(actual, is(0L));
     }
 
     @Test
-    void removeVowelsPlain() {
-        String actual = S55.removeVowels("example");
+    void sumSingle() {
+        long actual = S55.sum(1003, 1003);
 
-        assertThat(actual, is("xmpl"));
+        assertThat(actual, is(1003L));
     }
 
     @Test
-    void bin2decPlain() {
-        int actual = S55.bin2dec("1001");
+    void sumEmpty() {
+        long actual = S55.sum(1003, 1002);
 
-        assertThat(actual, is(9));
+        assertThat(actual, is(0L));
     }
 
     @Test
-    void reverseIntArrayPlain() {
-        int[] original = new int[] {1, 2, 3};
-        int[] actual = S55.reverse(original);
+    void evenSumPositive() {
+        long actual = S55.evenSum(1, 3);
 
-        assertThat(actual.length, is(original.length));
-        for(int i = 0; i < original.length; i++) {
-            assertThat(actual[i], is(original[original.length - i - 1]));
-        }
+        assertThat(actual, is(2L));
     }
 
     @Test
-    void averagePlain() {
-        double actual = S55.average(new int[] {1, 2, 3});
+    void evenSumNegPos() {
+        long actual = S55.evenSum(-3, 3);
 
-        assertThat(actual, is(2.0));
+        assertThat(actual, is(0L));
     }
 
     @Test
-    void maxPlain() {
-        int actual = S55.max(new int[] {2, 3, 1});
+    void evenSumSingle() {
+        long actual = S55.evenSum(1002, 1002);
 
-        assertThat(actual, is(3));
+        assertThat(actual, is(1002L));
     }
 
+    @Test
+    void evenSumEmpty() {
+        long actual = S55.evenSum(1003, 1002);
+
+        assertThat(actual, is(0L));
+    }
+
+    @Test
+    void factorialFour() {
+        long actual = S55.factorial(4);
+        
+        assertThat(actual, is(24L));
+    }
+
+    @Test
+    void factorialNegative() {
+        long actual = S55.factorial(-4);
+        
+        assertThat(actual, is(0L));
+    }
+
+    @Test
+    void fibonacci() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void multiplicationTable() {
+        fail("Not yet implemented");
+    }
 }
