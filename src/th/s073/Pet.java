@@ -1,4 +1,4 @@
-package th.s071;
+package th.s073;
 
 public class Pet {
     private String name;

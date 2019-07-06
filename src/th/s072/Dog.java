@@ -1,11 +1,18 @@
 package th.s072;
 
 public class Dog extends Pet {
+    private double speed;
+
     public Dog(String name) {
-        super(name);
+        this(name, 0);
     }
-    
-    public void bark() {
-        System.out.println("bark!");
+
+    public Dog(String name, double speed) {
+        super(name);
+        this.speed = speed;
+    }
+
+    public double getSpeed() {
+        return speed;
     }
 }

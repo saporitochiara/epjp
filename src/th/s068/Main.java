@@ -2,12 +2,14 @@ package th.s068;
 
 public class Main {
     public static void main(String[] args) {
-        Mammal[] mammals = new Mammal[2];
-        mammals[0] = new Dog(63, 40);
-        mammals[1] = new Cat(63, 20);
+        // Cannot instantiate
+//      MyAbstract ma = new MyAbstract();
+//      MyAbstract2 ma2 = new MyAbstract2();
 
-        for (Mammal mammal : mammals) {
-            System.out.println(mammal.toString());
-        }
+        MyAbstract ma = new MyConcrete();
+        ma.anAbstractMethod();
+
+        MyAbstract2 ma2 = new MyConcrete2();
+        ma2.aConcreteMethod();
     }
 }

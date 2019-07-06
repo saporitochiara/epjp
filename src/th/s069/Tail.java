@@ -1,4 +1,4 @@
-package th.s068;
+package th.s069;
 
 public class Tail {
     private int size;

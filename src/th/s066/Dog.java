@@ -1,4 +1,4 @@
-package th.s065;
+package th.s066;
 
 public class Dog implements BarkAndWag {
     @Override

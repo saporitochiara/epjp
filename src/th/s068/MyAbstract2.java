@@ -1,4 +1,4 @@
-package th.s067;
+package th.s068;
 
 public abstract class MyAbstract2 {
     public void aConcreteMethod() {

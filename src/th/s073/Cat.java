@@ -1,4 +1,4 @@
-package th.s072;
+package th.s073;
 
 public class Cat extends Pet {
     public Cat(String name) {

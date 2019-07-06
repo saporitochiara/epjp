@@ -1,4 +1,4 @@
-package th.s065;
+package th.s066;
 
 public class Main {
     public static void main(String[] args) {

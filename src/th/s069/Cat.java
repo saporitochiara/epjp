@@ -1,4 +1,4 @@
-package th.s068;
+package th.s069;
 
 public class Cat extends Mammal {
     private Tail tail;

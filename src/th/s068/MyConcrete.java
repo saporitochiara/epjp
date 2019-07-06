@@ -1,4 +1,4 @@
-package th.s067;
+package th.s068;
 
 // The type MyConcrete must implement the inherited abstract method
 //public class MyConcrete extends MyAbstract {

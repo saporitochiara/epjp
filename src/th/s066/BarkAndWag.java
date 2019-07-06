@@ -1,4 +1,4 @@
-package th.s065;
+package th.s066;
 
 interface BarkAndWag extends Barker {
     int AVG_WAGGING_SPEED = 12;

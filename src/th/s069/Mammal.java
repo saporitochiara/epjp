@@ -1,4 +1,4 @@
-package th.s068;
+package th.s069;
 
 public abstract class Mammal {
     protected int gestation;

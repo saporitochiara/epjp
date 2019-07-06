@@ -2,22 +2,11 @@ package th.s072;
 
 public class Main {
     public static void main(String[] args) {
-        // Cat cat = (Cat) new Dog();
+        Dog tom = new Dog("Tom", 2.42);
 
-        Pet pet = new Dog("Bob");
+        String name = tom.getName();
+        double speed = tom.getSpeed();
         
-        // risky
-        Dog dog = (Dog) pet;
-        dog.bark();
-
-        // no, no, no!!!
-        Cat cat = (Cat) pet; // java.lang.ClassCastException
-        System.out.println(System.identityHashCode(cat));
-
-        if (pet instanceof Cat) {
-            Cat tom = (Cat) pet;
-            tom.meow();
-        }
-
+        System.out.println("Name and speed: " + name + ", " + speed);
     }
 }
