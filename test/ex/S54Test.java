@@ -55,4 +55,42 @@ class S54Test {
 
         assertThat(actual, is("other"));
     }
+
+    @Test
+    void voteLowA() {
+        char actual = S54.vote(90.01);
+
+        assertThat(actual, is('A'));
+    }
+
+    @Test
+    void voteTopB() {
+        char actual = S54.vote(90);
+
+        assertThat(actual, is('B'));
+    }
+
+    @Test
+    void isLeapTrue() {
+        boolean actual = S54.isLeapYear(2020);
+
+        assertThat(actual, is(true));
+    }
+
+    @Test
+    void isLeapFalse() {
+        boolean actual = S54.isLeapYear(1900);
+
+        assertThat(actual, is(false));
+    }
+
+    @Test
+    void sortPlain() {
+        int[] actual = S54.sort(3, 2, 1);
+
+        assertThat(actual.length, is(3));
+        assertThat(actual[0], is(1));
+        assertThat(actual[1], is(2));
+        assertThat(actual[2], is(3));
+    }
 }

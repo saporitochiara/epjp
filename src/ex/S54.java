@@ -33,4 +33,47 @@ public class S54 {
         // TODO
         return "";
     }
+    
+    /**
+     * Convert a value in the interval [0, 100] to a letter in [A, F]
+     * 
+     * A if value > 90
+     * B if value in (80, 90]
+     * ...
+     * F if value <= 50
+     * 
+     * @param percentile in [0, 100]
+     * @return a letter in [A, F]
+     */
+    public static char vote(double percentile) {
+        // TODO
+        return 'F';
+    }
+    
+    /**
+     * Leap year checker
+     * 
+     * @param year
+     * @return true if leap year
+     */
+    public static boolean isLeapYear(int year) {
+        // TODO
+        return false;
+    }
+    
+    /**
+     * Sort the input parameters
+     * 
+     * @param a
+     * @param b
+     * @param c
+     * @return a sorted array
+     */
+    public static int[] sort(int a, int b, int c) {
+        int[] result = new int[3];
+        
+        // TODO
+        
+        return result;
+    }
 }
