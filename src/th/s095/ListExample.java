@@ -2,58 +2,23 @@ package th.s095;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.List;
 
 public class ListExample {
     public static void main(String[] args) {
-        Collection<Integer> coll = emptyCollection();
+        List<Integer> list = aList();
+        System.out.println(list);
 
-        coll.addAll(aCollection());
-        System.out.println(coll);
+        System.out.println("At index 2: " + list.get(2));
+        list.add(2, -997);
+        System.out.println("Index of -997: " + list.indexOf(-997));
 
-        if (coll.contains(-2233)) {
-            System.out.println("-2233 is there");
-        }
-
-        if (coll.equals(aCollection())) {
-            System.out.println("Same collection");
-        }
-
-        coll.add(42);
-        if (!coll.equals(aCollection())) {
-            System.out.println("Different collection");
-        }
-
-        System.out.println("The collection has " + coll.size() + " elements");
-
-        Iterator<Integer> it = coll.iterator();
-        System.out.print("{ ");
-        while (it.hasNext()) {
-            System.out.print(it.next() + " ");
-        }
-        System.out.println('}');
-
-        coll.remove(-5);
-        
-        Integer[] values = coll.toArray(new Integer[coll.size()]);
-        System.out.println(Arrays.toString(values));
-        
-        coll.retainAll(aCollection());
-        System.out.println(coll);
-        
-        coll.clear();
-        System.out.println("Collection is empty? " + coll.isEmpty());
+        list.remove(3);
+        list.set(3, 42);
+        System.out.println(list);
     }
 
-    private static Collection<Integer> emptyCollection() {
-        Collection<Integer> result = new ArrayList<Integer>();
-
-        return result;
+    private static List<Integer> aList() {
+        return new ArrayList<Integer>(Arrays.asList(12, 18, -5, -2233));
     }
-
-    private static Collection<Integer> aCollection() {
-        return Arrays.asList(12, 18, -5, -2233);
-    }
-
 }
