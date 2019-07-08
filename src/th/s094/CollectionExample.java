@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class Sample {
+public class CollectionExample {
     public static void main(String[] args) {
         Collection<Integer> coll = emptyCollection();
 
