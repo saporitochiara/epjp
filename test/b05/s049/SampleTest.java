@@ -1,4 +1,4 @@
-package th.s049;
+package b05.s049;
 
 import static org.junit.jupiter.api.Assertions.*;
 

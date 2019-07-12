@@ -1,4 +1,4 @@
-package th.s052;
+package b05.s052;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
