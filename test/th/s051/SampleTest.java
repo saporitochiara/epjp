@@ -6,6 +6,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import b05.s051.Sample;
+
 class SampleTest {
     private Sample sample;
 

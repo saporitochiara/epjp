@@ -5,6 +5,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+import b05.s050.Sample;
+
 class SampleTest {
     @Test
     public void negatePositive() {
