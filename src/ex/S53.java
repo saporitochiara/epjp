@@ -30,10 +30,10 @@ public class S53 {
     /**
      * Engine capacity
      * 
-     * @param bore
-     * @param stroke
+     * @param bore in mm
+     * @param stroke in mm
      * @param nr     number of cylinders
-     * @return the engine capacity
+     * @return the engine capacity in cm^3
      */
     public static double engineCapacity(double bore, double stroke, int nr) {
         // TODO
