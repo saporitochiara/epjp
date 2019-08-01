@@ -1,23 +1,21 @@
 package b06.s073;
 
 public class Main {
-    public static void main(String[] args) {
-        // Cat cat = (Cat) new Dog();
+	public static void main(String[] args) {
+//		Cat cat = (Cat) new Dog();
 
-        Pet pet = new Dog("Bob");
-        
-        // risky
-        Dog dog = (Dog) pet;
-        dog.bark();
+		Pet pet = new Dog("Bob");
 
-        // no, no, no!!!
-        Cat cat = (Cat) pet; // java.lang.ClassCastException
-        System.out.println(System.identityHashCode(cat));
+		// risky
+		Dog dog = (Dog) pet;
+		dog.bark();
 
-        if (pet instanceof Cat) {
-            Cat tom = (Cat) pet;
-            tom.meow();
-        }
+		// no, no, no!!!
+		// Cat cat = (Cat) pet; // java.lang.ClassCastException
 
-    }
+		if (pet instanceof Cat) {
+			Cat tom = (Cat) pet;
+			tom.meow();
+		}
+	}
 }
