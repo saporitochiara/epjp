@@ -1,7 +1,6 @@
 package b04;
 
 public class S43 {
-
     static void primitive(int parameter) {
         parameter += 1;
         System.out.println("parameter is " + parameter);
