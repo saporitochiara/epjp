@@ -1,23 +1,23 @@
 package b08;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class S88 {
-    public static void main(String[] args) {
-        System.out.println("Please, enter a few numbers");
-        double result = 0;
+	public static void main(String[] args) {
+		File f = new File("/tmp/hello.txt");
 
-        // try-with-resources
-        try (Scanner scanner = new Scanner(System.in)) {
-            while (scanner.hasNext()) {
-                if (scanner.hasNextDouble()) {
-                    result += scanner.nextDouble();
-                } else {
-                    System.out.println("Bad input, discarded: " + scanner.next());
-                }
-            }
-        }
+		BufferedReader br;
+		try {
+			br = new BufferedReader(new FileReader(f));
+			String line = br.readLine();
+			System.out.println(">" + line + "<");
 
-        System.out.println("Total is " + result);
-    }
+			br.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

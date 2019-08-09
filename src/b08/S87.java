@@ -1,21 +1,21 @@
 package b08;
 
-import java.util.Scanner;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class S87 {
     public static void main(String[] args) {
-        System.out.println("Please, enter a few numbers");
-        double result = 0;
+        File f = new File("/tmp/hello.txt");
 
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
-            if (scanner.hasNextDouble()) {
-                result += scanner.nextDouble();
-            } else {
-                System.out.println("Bad input, discarded: " + scanner.next());
-            }
+        try {
+            PrintWriter pw = new PrintWriter(new FileWriter(f));
+            pw.println("hello");
+            pw.flush();
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        scanner.close(); // see try-with-resources
-        System.out.println("Total is " + result);
     }
 }
