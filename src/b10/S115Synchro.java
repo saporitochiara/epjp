@@ -1,8 +1,8 @@
-package b10.s112;
+package b10;
 
-public class Synchro {
+public class S115Synchro {
     public static void main(String[] args) {
-        Synchro syn = new Synchro();
+        S115Synchro syn = new S115Synchro();
 
         Thread[] threads = { //
                 new Thread(new RunnerF(syn)), //
@@ -78,9 +78,9 @@ public class Synchro {
 }
 
 class RunnerF implements Runnable {
-    private Synchro synchro;
+    private S115Synchro synchro;
 
-    public RunnerF(Synchro synchro) {
+    public RunnerF(S115Synchro synchro) {
         this.synchro = synchro;
     }
 
@@ -91,9 +91,9 @@ class RunnerF implements Runnable {
 }
 
 class RunnerG implements Runnable {
-    private Synchro synchro;
+    private S115Synchro synchro;
 
-    public RunnerG(Synchro synchro) {
+    public RunnerG(S115Synchro synchro) {
         this.synchro = synchro;
     }
 
@@ -104,9 +104,9 @@ class RunnerG implements Runnable {
 }
 
 class RunnerF2 implements Runnable {
-    private Synchro synchro;
+    private S115Synchro synchro;
 
-    public RunnerF2(Synchro synchro) {
+    public RunnerF2(S115Synchro synchro) {
         this.synchro = synchro;
     }
 
@@ -117,9 +117,9 @@ class RunnerF2 implements Runnable {
 }
 
 class RunnerG2 implements Runnable {
-    private Synchro synchro;
+    private S115Synchro synchro;
 
-    public RunnerG2(Synchro synchro) {
+    public RunnerG2(S115Synchro synchro) {
         this.synchro = synchro;
     }
 

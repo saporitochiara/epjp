@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-public class S110 {
+public class S113 {
     private static void printIntegerMethods() {
         Class<?> c = Integer.class;
         Method[] methods = c.getMethods();

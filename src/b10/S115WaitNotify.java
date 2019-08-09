@@ -1,6 +1,6 @@
-package b10.s112;
+package b10;
 
-public class WaitNotify {
+public class S115WaitNotify {
     public static void main(String[] args) {
         Worker worker = new Worker();
         worker.start();
