@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.TreeSet;
 
-public class S107 {
+public class S110 {
     public static void main(String[] args) {
         List<String> data = Arrays.asList("alpha", "beta", "gamma", "delta");
 

@@ -1,26 +1,24 @@
 package b09;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.List;
 
 public class S098 {
     public static void main(String[] args) {
-        Queue<Integer> q = aQueue();
-        System.out.println(q);
+        List<Integer> list = aList();
+        System.out.println(list);
 
-        if (q.offer(18)) {
-            System.out.println("18 has been added");
-        }
+        System.out.println("At index 2: " + list.get(2));
+        list.add(2, -997);
+        System.out.println("Index of -997: " + list.indexOf(-997));
 
-        System.out.println("The first element in queue (or throws): " + q.element());
-        System.out.println("Again, the first element (or null): " + q.peek());
-
-        System.out.println("Remove (or throws): " + q.remove());
-        System.out.println("Poll (or null): " + q.poll());
+        list.remove(3);
+        list.set(3, 42);
+        System.out.println(list);
     }
 
-    private static Queue<Integer> aQueue() {
-        return new LinkedList<>(Arrays.asList(5, -3, -1, 12, 27, 5));
+    private static List<Integer> aList() {
+        return new ArrayList<Integer>(Arrays.asList(12, 18, -5, -2233));
     }
 }

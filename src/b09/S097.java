@@ -1,34 +1,59 @@
 package b09;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
-import java.util.NavigableSet;
-import java.util.TreeSet;
 
 public class S097 {
     public static void main(String[] args) {
-        NavigableSet<Integer> ns = aNavSet();
-        System.out.println(ns);
+        Collection<Integer> coll = emptyCollection();
 
-        System.out.println("Eleven or more: " + ns.ceiling(11));
-        System.out.println("Zero or less: " + ns.floor(0));
+        coll.addAll(aCollection());
+        System.out.println(coll);
 
-        System.out.println("More than -1: " + ns.higher(-1));
-        System.out.println("Less than -1: " + ns.lower(-1));
-
-        System.out.println("Poll the first element: " + ns.pollFirst());
-        System.out.println("Poll the last element: " + ns.pollLast());
-    
-        System.out.println("Print the set in descending order");
-        Iterator<Integer> it = ns.descendingIterator();
-        while(it.hasNext()) {
-            System.out.println(it.next());
+        if (coll.contains(-2233)) {
+            System.out.println("-2233 is there");
         }
+
+        if (coll.equals(aCollection())) {
+            System.out.println("Same collection");
+        }
+
+        coll.add(42);
+        if (!coll.equals(aCollection())) {
+            System.out.println("Different collection");
+        }
+
+        System.out.println("The collection has " + coll.size() + " elements");
+
+        Iterator<Integer> it = coll.iterator();
+        System.out.print("{ ");
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
+        }
+        System.out.println('}');
+
+        coll.remove(-5);
         
-        System.out.println("The set in descending order: " + ns.descendingSet());
+        Integer[] values = coll.toArray(new Integer[coll.size()]);
+        System.out.println(Arrays.toString(values));
+        
+        coll.retainAll(aCollection());
+        System.out.println(coll);
+        
+        coll.clear();
+        System.out.println("Collection is empty? " + coll.isEmpty());
     }
 
-    private static NavigableSet<Integer> aNavSet() {
-        return new TreeSet<Integer>(Arrays.asList(5, -3, -1, 12, 27, 5));
+    private static Collection<Integer> emptyCollection() {
+        Collection<Integer> result = new ArrayList<Integer>();
+
+        return result;
     }
+
+    private static Collection<Integer> aCollection() {
+        return Arrays.asList(12, 18, -5, -2233);
+    }
+
 }
