@@ -1,4 +1,4 @@
-select first_name, last_name, commission_pct
+select first_name, last_name
 from employees
 where commission_pct is null;
 
