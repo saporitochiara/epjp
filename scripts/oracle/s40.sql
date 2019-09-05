@@ -10,7 +10,7 @@ from dual;
 select instr('crab', 'ba') as "not found", instr('crab abba rabid cab', 'ab', 2, 3) as pos
 from dual;
 
-select instr(sysdate, '19') as pos
+select instr(sysdate, '19') as pos, sysdate
 from dual;
 
 select length('name'), length(42000)

@@ -16,3 +16,6 @@ from employees;
 select replace('Begin here', 'Begin', 'End'),
 	substr('ABCDEFG',3,4)
 from dual;
+
+select substr(12345678, 3, 4)
+from dual;
