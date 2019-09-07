@@ -324,3 +324,4 @@ insert into JOB_HISTORY (EMPLOYEE_ID,START_DATE,END_DATE,JOB_ID,DEPARTMENT_ID) v
 insert into JOB_HISTORY (EMPLOYEE_ID,START_DATE,END_DATE,JOB_ID,DEPARTMENT_ID) values ('176',str_to_date('01-JAN-07','%d-%b-%y'),str_to_date('31-DEC-07','%d-%b-%y'),'SA_MAN','80');
 insert into JOB_HISTORY (EMPLOYEE_ID,START_DATE,END_DATE,JOB_ID,DEPARTMENT_ID) values ('200',str_to_date('01-JUL-02','%d-%b-%y'),str_to_date('31-DEC-06','%d-%b-%y'),'AC_ACCOUNT','90');
 
+commit;
