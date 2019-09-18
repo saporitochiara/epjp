@@ -8,11 +8,13 @@ public class Exercise {
 		System.out.println("toUpper(): " + toUpper("Bob"));
 		System.out.println("toUpper2(): " + toUpper2("Bob"));
 		System.out.println("toUpper3(): " + toUpper3("Bob"));
-		
+
 	}
 
 	public static String toUpper(String s) {
-
+		if (s == null) {
+			return null;
+		}
 		StringBuilder sb = new StringBuilder(s.length());
 
 		for (int i = 0; i < s.length(); i++) {
@@ -44,18 +46,19 @@ public class Exercise {
 	}
 
 	public static String toUpper3(String s) {
-		StringBuilder sb=new StringBuilder(s.length());
-		
+		StringBuilder sb = new StringBuilder(s.length());
+
 		for (int i = 0; i < s.length(); i++) {
 			char current = s.charAt(i);
 			if (current >= 'a' && current <= 'z') {
-				sb.insert(i, (char)(current-GAP));
+				sb.insert(i, (char) (current - GAP));
 			} else {
-				sb.insert(i, (char)(current));
-	}
+				sb.insert(i, (char) (current));
+			}
 		}
 		return sb.toString();
 	}
+
 	public static void exercise(String sample) {
 		System.out.println(sample + " to uppercase and lowercase");
 		for (int i = 0; i < sample.length(); i++) {
