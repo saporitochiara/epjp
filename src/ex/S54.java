@@ -135,13 +135,15 @@ public class S54 {
 	 */
 	public static int[] sort(int a, int b, int c) {
 		int[] result = { a, b, c };
-		for (int i = 0; i < result.length - 1; i++) {
-				if (result[i] >= result[i + 1]) {
-					int max = result[i];
-					result[i] = result[i + 1];
-					result[i + 1] = max;
+		for (int i = 0; i < result.length; i++) {
+			for (int j = 1; j < (result.length - i); j++) {
+				if (result[j - 1] > result[j]) {
+					int max = result[j - 1];
+					result[j - 1] = result[j];
+					result[j] = max;
 				}
 			}
-			return result;
 		}
+		return result;
+	}
 }
