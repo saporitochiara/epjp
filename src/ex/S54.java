@@ -146,4 +146,28 @@ public class S54 {
 		}
 		return result;
 	}
+
+	public static int[] sort2(int a, int b, int c) {
+		if (a > b) {
+			if (b > c) {
+				return new int[] { c, b, a };
+			} else {
+				if (c > a) {
+					return new int[] { b, a, c };
+				} else {
+					return new int[] { b, c, a };
+				}
+			}
+		} else {
+			if (b < c) {
+				return new int[] { a, b, c };
+			} else {
+				if (c > a) {
+					return new int[] { a, c, b };
+				} else {
+					return new int[] { c, a, b };
+				}
+			}
+		}
+	}
 }
