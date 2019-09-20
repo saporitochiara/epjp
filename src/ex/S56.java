@@ -39,7 +39,7 @@ public class S56 {
 	 */
 	public static String removeVowels(String s) {
 		StringBuilder b = new StringBuilder(s.length());
-		for (int i = 0; i < s.length() - 1; i++) {
+		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) != 'a' && s.charAt(i) != 'e' && s.charAt(i) != 'i' && s.charAt(i) != 'o'
 					&& s.charAt(i) != 'u') {
 				b.append(s.charAt(i));
@@ -85,11 +85,11 @@ public class S56 {
 	 * @return the average
 	 */
 	public static double average(int[] data) {
-		int sum = 0;
+		double sum = 0;
 		for (int i = 0; i < data.length; i++) {
 			sum += data[i];
 		}
-		int av = sum / (data.length);
+		double av = sum / (data.length);
 		return av;
 	}
 

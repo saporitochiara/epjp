@@ -7,6 +7,7 @@ public class AboutString {
         String u = "or";
         System.out.println("s, t, u: " + s + ", " + t + ", " + u);
 
+        System.out.println("Char Z: "+(int)'Z');
         System.out.println("char at position 1 in s: " + s.charAt(1));
 
         System.out.println("s < t: " + s.compareTo(t));
