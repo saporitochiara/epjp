@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Adder {
     public static void main(String[] args) {
-        System.out.println("Please, enter a few numbers");
+    	System.out.println("Please, enter a few numbers");
         double result = 0;
 
         Scanner scanner = new Scanner(System.in);
