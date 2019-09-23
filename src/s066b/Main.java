@@ -7,18 +7,31 @@ public class Main {
 		veicoli[1] = new Moto();
 		veicoli[2] = new Bus();
 
+		boolean rightDirection = true;
 		for (Veicolo veicolo : veicoli) {
-			veicolo.sterza();
-		}
+			if (veicolo instanceof Moto) {
+				Moto moto = (Moto) veicolo;
+				moto.sterza(rightDirection, 20);
+			} else {
+				veicolo.sterza(rightDirection);
+				rightDirection = !rightDirection;
+			}
 
-		Climatizza[] climatizzazione = new Climatizza[2];
-		climatizzazione[0] = new Auto();
-		climatizzazione[1] = new Bus();
-		int temperature = 20;
+			Conditioning[] conditionings = new Conditioning[2];
+			conditionings[0] = new Auto();
+			conditionings[1] = new Bus();
 
-		for (Climatizza climatizza : climatizzazione) {
-			climatizza.setTemperature(temperature);
-			temperature += 1;
+			for (Conditioning conditioning : conditionings) {
+				if (conditioning instanceof Auto) {
+					System.out.println("This is a car -> ");
+					Auto auto = (Auto) conditioning;
+					auto.sterza(true);
+				} else {
+					System.out.println("This is not a car");
+				}
+			}
+
+			// (1) sterza solo l'auto in climatizzazione
 		}
 	}
 }
