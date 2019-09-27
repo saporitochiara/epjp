@@ -16,7 +16,7 @@ public class SimpleTest {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Can't negate MIN_VALUE");
 
-		Simple sample = new Simple();
-		sample.negate(Integer.MIN_VALUE);
+		Simple sample = new Simple(); //TODO
+//		sample.negate(Integer.MIN_VALUE);
 	}
 }
