@@ -1,3 +1,7 @@
+alter table coders
+add constraint coders_pk primary key(coder_id); 
+
+
 set serveroutput on
 
 -- output table
