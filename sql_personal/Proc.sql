@@ -26,3 +26,5 @@ begin
     dbms_output.put_line('New salary of ' || v_coder_id || ' is ' || v_new_salary); 
 end;
 /
+commit;
+

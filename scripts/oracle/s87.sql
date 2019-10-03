@@ -34,3 +34,5 @@ from coder_salaries;
 -- example cleanup
 drop trigger salary_update;
 drop table coder_salaries;
+
+commit;

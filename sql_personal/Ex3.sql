@@ -50,3 +50,4 @@ exception
     dbms_output.put_line('Non esiste utente associato al coder id richiesto');
 end;
 /
+commit;
